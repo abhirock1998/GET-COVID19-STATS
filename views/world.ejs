@@ -1,0 +1,70 @@
+<%-    include("partials/header")   -%>
+
+
+<table style="margin:20px 0" class="table  table-hover table-striped">
+<thead class="thead-light">
+<tr>
+
+
+<th ><span class="text">New Confirmed Cases:</span> <%= newconfirmed %></th>
+<th><span  class="text">Total Confirm:</span> <%=   totalconfirm %></th>
+<th><span  class="text">New Deaths:</span>  <%=    newdeath %></th>                
+<th><span  class="text">Total Deaths:</span>   <%=totaldeath %></th>
+<th><span  class="text">New Recovered:</span>  <%=newrecovered %></th>
+<th><span  class="text">Total Reacovered:</span>  <%=totlarecovered %></th>
+
+
+
+
+</tr>
+</thead>
+</table>
+
+<br>
+
+<table class="table  col-lg-4 table-hover table-striped table-bordered">
+<thead >
+<tr>
+<th>Country Names</th>
+<th>New Confirm Cases</th>
+<th>Total Confirmed Cases</th>
+<th>New Deaths </th>
+<th>Total Deaths</th>
+<th>New Reacovered Cases</th>
+<th>Total Reacovered Cases</th>
+</tr>
+</thead>
+<%  for(var i=0;i<countrydetail.length;i++){%>
+<tbody>
+
+<tr>
+
+<td><%= countrydetail[i].Country %></td>
+<td><%= countrydetail[i].NewConfirmed %></td>
+<td><%= countrydetail[i].TotalConfirmed %></td>
+<td><%= countrydetail[i].NewDeaths %></td>
+<td><%= countrydetail[i].TotalDeaths %></td>
+<td><%= countrydetail[i].NewRecovered%></td>
+<td><%= countrydetail[i].TotalRecovered%></td>
+
+</tr>
+</tbody>
+<%}%>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%-    include("partials/footer")   -%>

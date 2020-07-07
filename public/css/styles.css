@@ -1,0 +1,77 @@
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+.maincontent {
+    padding: 20px;
+
+}
+
+.maincontent a {
+    display: inline-flex;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.detail {
+    margin: 50px 0;
+}
+
+.description {
+    margin: 10px 20px;
+}
+
+.dictionary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4rem auto;
+    max-width: 90%;
+}
+
+.dictionary>.term {
+    text-align: center;
+    font-weight: 400;
+    max-width: 20rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: all 100ms ease-in-out;
+}
+
+dd {
+    font-size: 92.5%;
+    margin-left: 0;
+}
+table{
+    margin:30px auto;
+}
+.text{
+    font-size:19px;
+}
+.customtable{
+    margin: 10px 30px;
+}
+
+
+footer {
+    background-color: #f8f9fa;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    line-height: normal;
+}

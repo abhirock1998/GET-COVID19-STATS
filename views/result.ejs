@@ -1,0 +1,44 @@
+<%-    include("partials/header")   -%>
+
+<div class="maincontent">
+<a href="#" class="badge badge-primary">Confirm Cases:<%= confirm %></a>
+<a href="#" class="badge badge-danger"> Active Cases:<%= active %></a>
+<a href="#" class="badge badge-secondary">Recover Cases:<%=  recover %></a>
+<a href="#" class="badge badge-success"> Death:<%= death %></a>
+<a href="#" class="badge badge-warning">Active Rate:<%= activerate %></a>
+<a href="#" class="badge badge-info">Death Rate:<%= deathrate %></a>
+<a href="#" class="badge badge-light">New Case:<%= newcase %></a>
+<a href="#" class="badge badge-dark">New Death:<%=newdeath %></a>
+<a href="#" class="badge"> Serious Cases:<%= seriouscase %></a>
+
+
+
+</div>
+
+
+
+
+
+<dl class="dictionary">
+  <%  for(var i=0;i<updates.length;i++){%>
+        <div class="term">
+      
+          <dd>
+            <%= updates[i] %>
+          </dd>
+      
+        </div>
+            <%}%>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<%-    include("partials/footer")   -%>
